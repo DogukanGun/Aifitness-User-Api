@@ -3,7 +3,7 @@ using Aifitness_User_Api.Data.Abstraction;
 using MongoDB.Bson;
 using System;
 
-namespace Aifitness_User_Api.Models
+namespace Aifitness_User_Api.Data
 {
     public abstract class Document : IDocument
     {

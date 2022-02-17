@@ -1,5 +1,5 @@
 ﻿ 
-namespace Hocam.Core.Data
+namespace Aifitness_User_Api.Data
 {
     public class MongoDbOptions
     {

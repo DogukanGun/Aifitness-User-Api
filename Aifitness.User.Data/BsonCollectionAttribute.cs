@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hocam.Core.Data
+namespace Aifitness_User_Api.Data
 {
     [AttributeUsage(AttributeTargets.Class, Inherited = false)]
     public class BsonCollectionAttribute : Attribute

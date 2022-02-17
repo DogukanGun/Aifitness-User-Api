@@ -3,8 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks; 
-using Hocam.Core.Data;
 using AutoMapper;
+using Aifitness_User_Api.Data;
+using Aifitness_User_Api.Service.Modules.Authentication;
+using Aifitness_User_Api.Service.Modules.User;
 
 namespace Aifitness_User_Api.Service.Configurations
 {
@@ -36,6 +38,10 @@ namespace Aifitness_User_Api.Service.Configurations
             services.Configure(dbOptions);
             services.Configure(jwtOptions);
 
+            services.AddSingleton<IAuthenticationService, AuthenticationService>();
+            services.AddSingleton<ILogOnAuditService, LogOnAuditService>();
+            services.AddSingleton<ISecurityService, SecurityService>();
+            services.AddSingleton<IUserService, UserService>();
             services.AddDbServices();
         }
     }

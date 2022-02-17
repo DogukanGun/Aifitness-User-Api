@@ -10,7 +10,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Hocam.Core.Data
+namespace Aifitness_User_Api.Data
 {
     public class BaseMongoRepository<TDocument> : IMongoRepository<TDocument> where TDocument : IDocument
     {
