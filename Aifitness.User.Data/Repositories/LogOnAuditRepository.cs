@@ -12,7 +12,6 @@ namespace Aifitness_User_Api.Data.Repositories
     {
         public LogOnAuditRepository(IOptions<MongoDbOptions> options) : base(options)
         {
-
         } 
     }
 }

@@ -1,4 +1,5 @@
 ﻿
+using Aifitness.User.Data.Repositories;
 using Aifitness_User_Api.Data.Repositories;
 
 namespace Microsoft.Extensions.DependencyInjection
@@ -8,7 +9,9 @@ namespace Microsoft.Extensions.DependencyInjection
         public static void AddDbServices(this IServiceCollection services)
         {
             services.AddSingleton<ILogOnAuditRepository, LogOnAuditRepository>(); 
-            services.AddSingleton<IUserRepository, UserRepository>();              
+            services.AddSingleton<IUserRepository, UserRepository>();
+            services.AddSingleton<IRegisterAsAdminRepository, RegisterAsAdminRepository>();
+            services.AddSingleton<IRegisterAsTeacherRepository, RegisterAsTeacherRepository>();
         }
     }
 }

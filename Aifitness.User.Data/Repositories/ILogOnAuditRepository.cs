@@ -8,5 +8,5 @@ namespace Aifitness_User_Api.Data.Repositories
 {
     public interface ILogOnAuditRepository : IMongoRepository<LogOnAuditDocument>
     {
-     }
+    }
 }
