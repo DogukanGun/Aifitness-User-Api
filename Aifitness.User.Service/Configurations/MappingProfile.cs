@@ -21,6 +21,9 @@ namespace Aifitness_User_Api.Service.Configurations
             CreateMap<RegisterAsTeacherDocument, RegisterAsTeacherModel>();
             CreateMap<RegisterAsTeacherModel, RegisterAsTeacherDocument>();
             CreateMap<LogOnAuditModel,LogOnAuditDocument>();
+            CreateMap<LogOnAuditDocument, LogOnAuditDocument>();
+            CreateMap<WorkoutDocument, WorkoutModel>();
+            CreateMap<WorkoutModel, WorkoutDocument>();
         }
     }
 }

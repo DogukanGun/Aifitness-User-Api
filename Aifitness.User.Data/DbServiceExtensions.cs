@@ -12,6 +12,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddSingleton<IUserRepository, UserRepository>();
             services.AddSingleton<IRegisterAsAdminRepository, RegisterAsAdminRepository>();
             services.AddSingleton<IRegisterAsTeacherRepository, RegisterAsTeacherRepository>();
+            services.AddSingleton<IWorkoutRepository, WorkoutRepository>();
         }
     }
 }

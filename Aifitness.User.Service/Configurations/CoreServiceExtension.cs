@@ -7,6 +7,7 @@ using AutoMapper;
 using Aifitness_User_Api.Data;
 using Aifitness_User_Api.Service.Modules.Authentication;
 using Aifitness_User_Api.Service.Modules.User;
+using Aifitness.User.Service.Services.Workout;
 
 namespace Aifitness_User_Api.Service.Configurations
 {
@@ -42,6 +43,7 @@ namespace Aifitness_User_Api.Service.Configurations
             services.AddSingleton<ILogOnAuditService, LogOnAuditService>();
             services.AddSingleton<ISecurityService, SecurityService>();
             services.AddSingleton<IUserService, UserService>();
+            services.AddSingleton<IWorkoutService, WorkoutService>();
             services.AddDbServices();
         }
     }
